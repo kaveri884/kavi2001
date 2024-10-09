@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>for loop taxt</h2>
+
+<p id="for loop"></p>
+
+<script>
+let text = "10";
+
+for (let i = 5; i < 10; i++) {
+  text += "this is numbers" + i + "<br>";
+}
+
+document.getElementById("for loop").innerHTML = text;
+</script>
+
+<h2>text</h2>
+
+<p id="for loop"></p>
+
+<script>
+let s= "30";
+
+for (let i = 20; i < 40; i++) {
+  text += "this is numbers" + i + "<br>";
+}
+
+document.getElementById("for loop").innerHTML = text;
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
