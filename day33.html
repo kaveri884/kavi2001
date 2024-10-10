@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <h2 id="result"> calculator</h2>
+    
+        <label for="name">number</label>
+        <input type="number" id="number" name="number 1" placeholder="Your name here">
+        
+
+        <input type="result" value="result">
+ 
+
+    
+    <button onclick="add()">+</button>
+    <button onclick="subtract()">-</button>
+    <button onclick="multiply()">*</button>
+    <button onclick="percentage()">%</button>
+    
+    <script>
+        let currentCount = 0;
+
+        function add() {
+            currentCount++;
+            updateDisplay();
+        }
+
+        function subtract() {
+            currentCount--;
+            updateDisplay();
+        }
+
+        function multiply() {
+            currentCount *= 3;
+            updateDisplay();
+        }
+
+        function percentage() {
+            currentCount /= 200;
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            document.getElementById('result').innerText = currentCount;
+        }
+    </script>
+</body>
+</html>
+
+
